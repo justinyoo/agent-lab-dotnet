@@ -1,23 +1,35 @@
-<div class="mc-screen mc-overworld-bg">
-    <div class="mc-start-shell">
-        <div class="mc-start-card mc-block-panel">
-            <h1 class="mc-title mb-2">Soc Ops</h1>
-            <p class="mc-subtitle mb-8">Social Bingo</p>
+<div class="arc-screen">
+    <div class="arc-shell">
+        <div class="arc-card">
 
-            <div class="mc-rules-card mb-8">
-                <h2 class="mc-rules-title mb-3">How to play</h2>
-                <ul class="text-left text-sm space-y-2 mc-rules-list">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-                </ul>
+            <div class="arc-brand">
+                <p class="arc-kicker">Social Ice-Breaker</p>
+                <h1 class="arc-title">SOC<span class="arc-title-accent">OPS</span></h1>
+                <p class="arc-hook">Find the humans. Fill the grid. Win the room.</p>
+            </div>
+
+            <div class="arc-rules" aria-label="How to play">
+                <div class="arc-rule">
+                    <span class="arc-rule-icon" aria-hidden="true">▶</span>
+                    <span>Find someone who matches each square</span>
+                </div>
+                <div class="arc-rule">
+                    <span class="arc-rule-icon" aria-hidden="true">▶</span>
+                    <span>Tap the square to mark it</span>
+                </div>
+                <div class="arc-rule">
+                    <span class="arc-rule-icon" aria-hidden="true">▶</span>
+                    <span>5 in a row wins — BINGO!</span>
+                </div>
             </div>
 
             <button
                 @onclick="OnStart"
-                class="mc-btn mc-btn-primary mc-btn-lg w-full">
+                class="arc-cta w-full"
+                aria-label="Start game">
                 Start Game
             </button>
+
         </div>
     </div>
 </div>
