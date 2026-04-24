@@ -435,7 +435,7 @@ body {
     --arc-yellow-dark: #c4a800;
     --arc-yellow-shadow: #7a6500;
     --arc-text: #ffffff;
-    --arc-text-muted: rgba(255, 255, 255, 0.62);
+    --arc-text-muted: rgba(255, 255, 255, 0.78);
     --arc-border-glow: rgba(91, 200, 240, 0.28);
     --arc-panel-fill: rgba(255, 255, 255, 0.04);
 }
@@ -485,7 +485,7 @@ body {
 }
 
 .arc-kicker {
-    font-size: 0.52rem;
+    font-size: 0.62rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--arc-cyan);
@@ -512,7 +512,7 @@ body {
 }
 
 .arc-hook {
-    font-size: 0.58rem;
+    font-size: 0.7rem;
     line-height: 1.65;
     color: var(--arc-text-muted);
     margin: 0;
@@ -531,8 +531,8 @@ body {
     display: flex;
     align-items: flex-start;
     gap: 0.65rem;
-    font-size: 0.55rem;
-    color: rgba(255, 255, 255, 0.82);
+    font-size: 0.65rem;
+    color: var(--arc-text);
     line-height: 1.6;
 }
 
@@ -544,7 +544,7 @@ body {
     color: var(--arc-yellow);
     flex-shrink: 0;
     margin-top: 0.08rem;
-    font-size: 0.48rem;
+    font-size: 0.58rem;
 }
 
 .arc-cta {
@@ -616,15 +616,15 @@ body {
 
     .arc-kicker,
     .arc-hook {
-        font-size: 0.46rem;
+        font-size: 0.54rem;
     }
 
     .arc-rule {
-        font-size: 0.48rem;
+        font-size: 0.56rem;
     }
 
     .arc-cta {
-        font-size: 0.62rem;
+        font-size: 0.68rem;
         padding: 0.8rem;
     }
 }
