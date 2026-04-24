@@ -1,23 +1,43 @@
 <div class="mc-screen mc-overworld-bg">
-    <div class="mc-start-shell">
-        <div class="mc-start-card mc-block-panel">
-            <h1 class="mc-title mb-2">Soc Ops</h1>
-            <p class="mc-subtitle mb-8">Social Bingo</p>
+    <div class="mc-sun" aria-hidden="true"></div>
+    <div class="mc-cloud mc-cloud-1" aria-hidden="true"></div>
+    <div class="mc-cloud mc-cloud-2" aria-hidden="true"></div>
+    <div class="mc-cloud mc-cloud-3" aria-hidden="true"></div>
+    <div class="mc-terrain-strip" aria-hidden="true"></div>
 
-            <div class="mc-rules-card mb-8">
-                <h2 class="mc-rules-title mb-3">How to play</h2>
-                <ul class="text-left text-sm space-y-2 mc-rules-list">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
-                </ul>
+    <div class="mc-start-shell">
+        <div class="mc-cinematic-content">
+
+            <div class="mc-hero-lockup mc-anim-drop">
+                <div class="mc-hero-badge">Social Bingo</div>
+                <h1 class="mc-hero-title">SOC OPS</h1>
+                <p class="mc-hero-tagline">Meet your people.&nbsp; One square at&nbsp;a&nbsp;time.</p>
             </div>
 
-            <button
-                @onclick="OnStart"
-                class="mc-btn mc-btn-primary mc-btn-lg w-full">
-                Start Game
-            </button>
+            <div class="mc-step-panel mc-anim-rise" style="animation-delay:220ms">
+                <div class="mc-step-row">
+                    <span class="mc-step-num" aria-hidden="true">1</span>
+                    <span class="mc-step-desc">Find people who match the prompts</span>
+                </div>
+                <div class="mc-step-row">
+                    <span class="mc-step-num" aria-hidden="true">2</span>
+                    <span class="mc-step-desc">Tap a square when you find a match</span>
+                </div>
+                <div class="mc-step-row">
+                    <span class="mc-step-num" aria-hidden="true">3</span>
+                    <span class="mc-step-desc">Get 5 in a row to win!</span>
+                </div>
+            </div>
+
+            <div class="mc-cta-block mc-anim-rise" style="animation-delay:400ms">
+                <button
+                    @onclick="OnStart"
+                    class="mc-btn mc-btn-primary mc-btn-cta"
+                    aria-label="Start Game">
+                    &#9654;&nbsp; Start Game
+                </button>
+            </div>
+
         </div>
     </div>
 </div>
