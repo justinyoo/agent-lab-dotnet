@@ -1,23 +1,66 @@
-<div class="mc-screen mc-overworld-bg">
-    <div class="mc-start-shell">
-        <div class="mc-start-card mc-block-panel">
-            <h1 class="mc-title mb-2">Soc Ops</h1>
-            <p class="mc-subtitle mb-8">Social Bingo</p>
+<div class="mb-screen">
+    <div class="mb-shell">
+        <div class="mb-card">
 
-            <div class="mc-rules-card mb-8">
-                <h2 class="mc-rules-title mb-3">How to play</h2>
-                <ul class="text-left text-sm space-y-2 mc-rules-list">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
+            <!-- Identity area -->
+            <div class="mb-identity">
+                <div class="mb-badge">Mission Brief</div>
+                <h1 class="mb-title">SOC OPS</h1>
+                <p class="mb-subtitle">Social Bingo · Field Edition</p>
+            </div>
+
+            <!-- Feature chips: locate → confirm → achieve loop -->
+            <div class="mb-chips-section">
+                <p class="mb-section-label">Objective Loop</p>
+                <div class="mb-chips">
+                    <div class="mb-chip">
+                        <span class="mb-chip-icon">🔍</span>
+                        <span class="mb-chip-verb">Locate</span>
+                        <span class="mb-chip-desc">Find someone in the room who matches the square</span>
+                    </div>
+                    <div class="mb-chip">
+                        <span class="mb-chip-icon">✅</span>
+                        <span class="mb-chip-verb">Confirm</span>
+                        <span class="mb-chip-desc">Tap to mark the match and lock it in</span>
+                    </div>
+                    <div class="mb-chip">
+                        <span class="mb-chip-icon">🏆</span>
+                        <span class="mb-chip-verb">Achieve</span>
+                        <span class="mb-chip-desc">Complete five in a row to claim victory</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Briefing checklist -->
+            <div class="mb-rules-section">
+                <p class="mb-section-label">Briefing Checklist</p>
+                <ul class="mb-checklist" role="list">
+                    <li class="mb-checklist-item">
+                        <span class="mb-check-num" aria-hidden="true">01</span>
+                        <span class="mb-check-text">Mingle with the room and find someone who fits each square</span>
+                    </li>
+                    <li class="mb-checklist-item">
+                        <span class="mb-check-num" aria-hidden="true">02</span>
+                        <span class="mb-check-text">Tap the square to mark it — each match is locked in instantly</span>
+                    </li>
+                    <li class="mb-checklist-item">
+                        <span class="mb-check-num" aria-hidden="true">03</span>
+                        <span class="mb-check-text">Complete a full row, column, or diagonal to win the round</span>
+                    </li>
                 </ul>
             </div>
 
-            <button
-                @onclick="OnStart"
-                class="mc-btn mc-btn-primary mc-btn-lg w-full">
-                Start Game
-            </button>
+            <!-- CTA -->
+            <div class="mb-cta-section">
+                <button
+                    @onclick="OnStart"
+                    class="mb-btn-deploy"
+                    aria-label="Begin Mission — start the game">
+                    Begin Mission
+                </button>
+                <p class="mb-hint">One board per agent · Good luck out there</p>
+            </div>
+
         </div>
     </div>
 </div>
